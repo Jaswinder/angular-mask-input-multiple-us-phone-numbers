@@ -1,0 +1,9 @@
+<input
+  type="text"
+  [textMask]="{ mask: mask }"
+  placeholder="(555) 495-3947"
+  [(ngModel)]="myData"
+  (ngModelChange)="change($event, input)"
+/>
+
+<div>{{ myData }}</div>
